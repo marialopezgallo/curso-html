@@ -1,0 +1,33 @@
+<html>
+     <body> 
+         <head>Lista de telefonos de empresa</head>
+         <table>
+             <tr> 
+                 <th><strong>Numero</strong></th>
+                 <th><strong>Modelo</strong></th>
+                 <th><strong>Precio</strong></th>
+            </tr>
+
+                @foreach (var telefono in ViewBag.ListaTelefonos)
+             { <tr> 
+                 <td>@telefono.Numero</td>
+                 <td>@telefono.Modelo</td>
+                 <td>@telefono.Precio</td>
+                
+                
+                
+                <td> <a href="/Telefono/Detalle?numero=@telefono.Numero"> Ir a detalle</a>
+                    </td>
+                
+                    
+                <td> <a href="/Telefono/Borrar?numero=@telefono.Numero"> Borrar telefono</a>
+                    </td>
+                </tr>
+                
+             }
+
+             <a href="/Telefono/Formulario"> Ir al Formulario</a>
+        
+        </table>
+     </body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            
+            function pulsar() {
+                var lista=[];
+
+                lista.push({nombre:"peppe",edad:20});
+                lista.push({nombre:"ana", edad:30})
+                
+                for(var i=0; i<lista.length; i++)
+                { console.log(lista[i].nombre);
+                    console.log(lista[i].edad);
+                
+                }
+                
+                for (elemento of lista)
+                {console.log(elemento.nombre)
+                    console.log(elemento.edad)}
+           
+            }
+
+            
+           
+               
+
+        </script>
+    </head>
+    <body>
+                
+            <input 
+            type="button" 
+            value= "pulsar" 
+            onclick="pulsar()"/>
+            
+        
+    </body>
+</html>

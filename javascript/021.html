@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <style>
+        table,
+        td {
+            border: 1px solid black;
+        }
+
+        #erroredad,
+        #errornombre {
+            color: red;
+            display: none;
+        }
+    </style>
+    <script type="text/javascript">
+
+
+        function validarCajaNoVacia(idcaja)
+            {
+        var eCaja = document.getElementById(idcaja);
+
+
+        if (eCaja.value != "") { return true; }
+        else { return false; }
+            }
+
+
+
+
+        function mostrarErrorCaja(idcaja, idspanerror) {
+
+
+
+            var eError = document.getElementById(idspanerror);
+
+            if (validarCajaNoVacia(idcaja)) { eError.style.display = "none"; }
+            else { eError.style.display = "inline" }
+        }
+
+
+
+
+        function validarNombreCaja(event) {
+            mostrarErrorCaja("nombre", "errornombre")
+        }
+
+        function validarEdadCaja(event) {
+
+            mostrarErrorCaja("edad", "erroredad")
+        }
+
+
+        function validar() {
+            var nombre = document.getElementById("nombre").value;
+            var edad = document.getElementById("edad").value;
+
+            if (validarCajaNoVacia("nombre") && validarCajaNoVacia("edad")) {
+
+                alert("todo ok");
+                return true;
+            } else {
+                mostrarErrorCaja("nombre", "errornombre");
+                mostrarErrorCaja("edad", "erroredad");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body id="cuerpo">
+    <form action="destino" onsubmit="return validar()">
+        <p>
+            Nombre:<input type="text" name="nombre" id="nombre" onkeyup="validarNombreCaja(event)" />
+            <span id="errornombre">falta el nombre</span>
+        </p>
+        <p>
+            Edad<input type="text" name="edad" id="edad" onkeyup="validarEdadCaja(event)" />
+            <span id="erroredad">falta la edad</span>
+        </p>
+        <input type="submit" value="enviar" />
+    </form>
+</body>
+
+</html>

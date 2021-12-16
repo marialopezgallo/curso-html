@@ -1,0 +1,69 @@
+<html>
+
+<head>
+
+    <style>
+        td {
+            cursor: pointer;
+        }
+    </style>
+
+    <script type="text/javascript">
+
+
+      function addfila()
+
+           { 
+           
+            var nombre = document.getElementById("nombre").value;          
+
+            var tr=document.createElement("tr");
+            var td=document.createElement("td");
+            
+
+            tr.appendChild(td);
+
+            var nodoTextoNombre=document.createTextNode(nombre);
+            td.appendChild(nodoTextoNombre);
+
+            var mitable= document.getElementById("mitabla");
+            mitabla.appendChild(tr);
+
+           }
+            
+
+
+
+
+        
+
+    </script>
+</head>
+
+<body id="cuerpo">
+     
+    
+            <table id="mitabla">
+                    <tr>
+
+                        <td>antonio</td>
+
+                    </tr>
+
+              
+            
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" />
+                <input type="button" value="nuevo" onclick="addfila()">
+        
+             
+          
+
+
+          
+              
+
+
+</body>
+
+</html>

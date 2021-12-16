@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        
+        function validar() {
+            var nombre = document.getElementById("nombre").value;
+            
+            if (nombre!="") {
+            alert ("todo OK");
+            return true}
+            else { alert("el nombre falta")}
+            
+            
+        }
+    </script>
+</head>
+
+<body id="cuerpo">
+
+    <form action="destino" onsubmit="return validar()">
+
+
+        
+
+            Nombre<input type=" text" name="nombre" id="nombre" />
+
+            Edad<input name="edad" type="text" id="edad" />
+
+
+    <input type="submit" value="enviar">
+    </form>
+
+</body>
+
+</html>

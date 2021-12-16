@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+
+        function nuevo() {
+
+
+
+
+
+
+
+            var tr = document.createElement("tr");
+
+            var td = document.createElement("td");
+            var nombre = document.getElementById("nombre").value;
+            var nodoNombre = document.createTextNode(nombre);
+
+            var td2 = document.createElement("td")
+            var apellidos = document.getElementById("apellidos").value;
+            var nodoApellidos = document.createTextNode(apellidos)
+
+
+
+            tr.appendChild(td);
+            td.appendChild(nodoNombre);
+
+            tr.appendChild(td2);
+            td2.appendChild(nodoApellidos);
+
+
+            var zona1 = document.getElementById("zona1");
+            zona1.appendChild(tr);
+
+
+        }
+
+
+
+    </script>
+</head>
+
+<body id="cuerpo">
+
+    <table id="zona1">
+        <tr> 
+            <th>Nombre</th>
+            <th>Apellidos</th>
+
+           <td>
+               
+            
+          </td>
+         
+
+        </tr>
+
+
+
+
+
+
+
+        <label>Nombre:</label>
+        <input name="nombre" type="text" id="nombre">
+        </p>
+        <p>
+            <label>Apellidos:</label>
+            <input name="apellidos" type="text" id="apellidos">
+        </p>
+
+        <input type="button" value="nuevo" onclick="nuevo()">
+
+
+</body>
+
+</html>

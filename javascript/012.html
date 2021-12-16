@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+
+        function nuevo() {
+            
+            var inputnumero = document.getElementById("minumero");
+            
+            alert(inputnumero.value);
+
+            var etiqueta = document.createElement("p");
+
+            etiqueta.innerText= inputnumero.value;
+
+            var cuerpo = document.getElementById("cuerpo");
+            // añado el parrafo con su contenido al documento    
+            cuerpo.appendChild(etiqueta);
+
+    }
+
+
+
+    </script>
+</head>
+
+<body id="cuerpo">
+
+    <p>
+        <input type="text" name="numero" id="minumero" />
+        <input type="button" value="nuevo " onclick="nuevo()" />
+    </p>
+
+    <p> </p>
+
+
+</body>
+
+</html>

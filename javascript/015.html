@@ -1,0 +1,52 @@
+
+
+
+<html>
+
+<head>
+
+    <style>
+        td {
+            cursor: pointer;
+        }
+    </style>
+
+    <script type="text/javascript">
+
+
+        function pulsaste() {
+             
+            
+            var mitd=event.target;
+            var tr=mitd.parentNode;
+            console.log (tr);
+            tr.remove();
+
+            
+        }
+
+    </script>
+</head>
+
+<body id="cuerpo">
+
+    <table>
+        <tr>
+            <td onclick="pulsaste(event)">hola1</td>
+            <td onclick="pulsaste(event)">hola2</td>
+            
+        </tr>
+        <tr>
+            <td onclick="pulsaste(event)">hola3</td>
+            <td onclick="pulsaste(event)">hola4</td>
+
+        </tr>
+        <tr>
+            <td onclick="pulsaste(event)">hola5</td>
+            <td onclick="pulsaste(event)">hola6</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

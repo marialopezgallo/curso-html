@@ -1,0 +1,57 @@
+<html>
+
+<head>
+
+    <style>
+        td {
+            cursor: pointer;
+        }
+    </style>
+
+    <script type="text/javascript">
+
+
+
+
+
+
+        function borrar()
+         {
+            var caja=event.target;
+            console.log (caja);
+            var mitd=caja.parentNode;
+            var mitr=mitd.parentNode;
+            
+            mitr.remove();
+         }
+
+
+        
+
+    </script>
+</head>
+
+<body id="cuerpo">
+
+    <table>
+        <tr>
+            <td>hola1</td>
+            <td>hola2</td>
+            <td><input type="button" value="borrar " onclick="borrar(event)"></td>
+        </tr>
+        <tr>
+            <td>hola3</td>
+            <td>hola4</td>
+            <td><input type="button" value="borrar " onclick="borrar(event)"></td>
+
+        </tr>
+        <tr>
+            <td>hola5</td>
+            <td>hola6</td>
+            <td><input type="button" value="borrar " onclick="borrar(event)"></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+
+
+
+<html>
+     <body> 
+         <head>     Lista de Facturas 
+
+         </head>
+         <table>
+             <tr> 
+                 <th>Numero</th>
+                 <th>Concepto</th>
+                 <th>Importe</th>
+                 <th>TipoIVA</th>
+                 <th>Pagada</th>
+                <th>Ver  detalle</th>
+                 </tr>
+
+
+             @foreach (var factura in ViewBag.Listafacturas)
+             { <tr> 
+                 <td>@factura.Numero</td>
+                 <td>@factura.Concepto</td>
+                 <td>@factura.Importe</td>
+                 <td>@factura.TipoIVA</td>
+                 <td>@factura.Pagada</td>
+                    <td> <a href="/Factura/Detalle?numero=@factura.Numero"> Ir a detalle</a>
+                    </td>
+
+                    <td> <a href="/Factura/Borrar?numero=@factura.Numero"> Borrar factura</a>
+                    </td>
+              
+                
+
+                </tr>              
+              }   
+         </table>
+         <a href="/Factura/Formulario"> Ir al Formulario</a>
+     </body>
+</html>

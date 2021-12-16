@@ -1,0 +1,115 @@
+{
+  "FilePath": "c:\\Users\\Admin\\Desktop\\CURSOHTML\\net\\net.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-3.0",
+    "LanguageVersion": "5.0",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-3.0"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 1000
+  },
+  "RootNamespace": "net",
+  "Documents": [
+    {
+      "FilePath": "c:\\Users\\Admin\\Desktop\\CURSOHTML\\net\\Views\\Telefono\\Detalle.cshtml",
+      "TargetPath": "Views\\Telefono\\Detalle.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Admin\\Desktop\\CURSOHTML\\net\\Views\\Home\\vernota.cshtml",
+      "TargetPath": "Views\\Home\\vernota.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Admin\\Desktop\\CURSOHTML\\net\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Admin\\Desktop\\CURSOHTML\\net\\Views\\Persona\\RecibirDatosPersona.cshtml",
+      "TargetPath": "Views\\Persona\\RecibirDatosPersona.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Admin\\Desktop\\CURSOHTML\\net\\Views\\Home\\Formulariosuma.cshtml",
+      "TargetPath": "Views\\Home\\Formulariosuma.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Admin\\Desktop\\CURSOHTML\\net\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Admin\\Desktop\\CURSOHTML\\net\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Admin\\Desktop\\CURSOHTML\\net\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Admin\\Desktop\\CURSOHTML\\net\\Views\\Home\\index.cshtml",
+      "TargetPath": "Views\\Home\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Admin\\Desktop\\CURSOHTML\\net\\Views\\Persona\\Index.cshtml",
+      "TargetPath": "Views\\Persona\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Admin\\Desktop\\CURSOHTML\\net\\Views\\Home\\mensaje.cshtml",
+      "TargetPath": "Views\\Home\\mensaje.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Admin\\Desktop\\CURSOHTML\\net\\Views\\Telefono\\Index.cshtml",
+      "TargetPath": "Views\\Telefono\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Admin\\Desktop\\CURSOHTML\\net\\Views\\Home\\ciennumeros.cshtml",
+      "TargetPath": "Views\\Home\\ciennumeros.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Admin\\Desktop\\CURSOHTML\\net\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Admin\\Desktop\\CURSOHTML\\net\\Views\\Factura\\Index.cshtml",
+      "TargetPath": "Views\\Factura\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Admin\\Desktop\\CURSOHTML\\net\\Views\\Factura\\Formulario.cshtml",
+      "TargetPath": "Views\\Factura\\Formulario.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Admin\\Desktop\\CURSOHTML\\net\\Views\\Telefono\\Formulario.cshtml",
+      "TargetPath": "Views\\Telefono\\Formulario.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Admin\\Desktop\\CURSOHTML\\net\\Views\\Factura\\Detalle.cshtml",
+      "TargetPath": "Views\\Factura\\Detalle.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Admin\\Desktop\\CURSOHTML\\net\\Views\\Home\\Resultadosuma.cshtml",
+      "TargetPath": "Views\\Home\\Resultadosuma.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
+  "SerializationFormat": "0.2"
+}

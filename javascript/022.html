@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <style>
+        table,
+        td {
+            border: 1px solid black;
+        }
+
+
+        #formulario span {
+            color: red;
+            display: none;
+        }
+    </style>
+
+
+    <script type="text/javascript" src="validadores.js"></script>
+    <script type="text/javascript" src="formateadores.js"></script>
+    <script type="text/javascript" src="validarImporteMinimo.js"></script>
+    <script>
+
+
+        function validarNumeroCaja(event) {
+            mostrarErrorCaja("numero", "errornumero")
+        }
+
+        function validarConceptoCaja(event) {
+
+            mostrarErrorCaja("concepto", "errorconcepto")
+        }
+
+        function validarImporteCaja(event) 
+        {
+
+            mostrarErrorCaja("importe", "errorimporte")
+
+            
+        }
+
+        function validar() 
+        {
+            var numero = document.getElementById("numero").value;
+            var concepto = document.getElementById("concepto").value;
+            var importe = document.getElementById("importe").value;
+            {
+                if (validarCajaNoVacia("numero") &&
+                    validarCajaNoVacia("concepto") &&
+                    validarCajaNoVacia("importe") &&
+                  validarImporteMinimo("importe,100"))
+                {
+                    alert("todo ok");
+                    return true;
+                } else
+            {
+                    mostrarErrorCaja("numero", "errornumero");
+                    mostrarErrorCaja("concepto", "errorconcepto");
+                    mostrarErrorCaja("importe", "errorimporte");
+                    return false;
+                }
+            }
+        }
+    </script>
+</head>
+
+<body id="cuerpo">
+    <form action="destino" id="formulario" onsubmit="return validar()">
+        <p>
+            Numero:<input type="text" name="numero" id="numero" onkeyup="validarNumeroCaja(event)" />
+            <span id="errornumero">falta el numero</span>
+        </p>
+        <p>
+            Concepto<input type="text" name="concepto" id="concepto" onkeyup="validarConceptoCaja(event)" />
+            <span id="errorconcepto">falta el concepto</span>
+        </p>
+        <p>
+            Importe<input type="text" name="importe" id="importe" onkeyup="validarImporteCaja(event)" />
+            <span id="errorimporte">falta el importe/mayor de 100 Euros</span>
+        </p>
+        <input type="submit" value="enviar" />
+    </form>
+</body>
+
+</html>
